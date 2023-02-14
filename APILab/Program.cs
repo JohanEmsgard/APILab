@@ -2,10 +2,15 @@ WebApplication app = WebApplication.Create();
 
 app.MapGet("/",Answer);
 
+app.MapGet("/Villan/", () => 
+{
+    return "Eggman";
+});
+
 app.Run();
 
 
 static string Answer()
 {
-    return"THERE NOT BEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNS!!!";
+    return"Sonic The Hedgehog";
 }
