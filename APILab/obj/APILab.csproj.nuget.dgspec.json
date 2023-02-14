@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj": {}
+    "C:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj": {}
   },
   "projects": {
-    "c:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj": {
+    "C:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj",
+        "projectUniqueName": "C:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj",
         "projectName": "APILab",
-        "projectPath": "c:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj",
+        "projectPath": "C:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\APILab.csproj",
         "packagesPath": "C:\\Users\\emsgard.johan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\obj\\",
+        "outputPath": "C:\\Users\\emsgard.johan\\Programering 2\\APILab\\APILab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
