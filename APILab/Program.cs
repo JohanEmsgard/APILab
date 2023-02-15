@@ -27,9 +27,15 @@ app.MapGet("/hero/{num}", (int num) =>
     return Results.NotFound();
 });
 
-app.MapPost("/hero/",() => 
+app.MapPost("/hero/",(Villains h) => 
 {
+    if (hero.Find(x => x.Name == h.Name) != null)
+    {
+        return Results.BadRequest();
+    }
 
+    hero.Add(h);
+    Console.WriteLine(h.Name);
 });
 
 app.Run();
