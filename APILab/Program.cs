@@ -11,9 +11,15 @@ evil.Add(new(){Name="Bowser", IQ=1});
 
 app.MapGet("/",Answer);
 
-app.MapGet("/Villan/", () => 
+app.MapGet("/evil/", () => 
 {
     return evil;
+});
+
+
+app.MapGet("/evil/{num}", (int num) =>
+{
+    return num;
 });
 
 app.Run();
