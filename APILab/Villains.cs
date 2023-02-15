@@ -5,5 +5,5 @@ using System;
 public class Villains
 {
     public string Name {get; set;}
-    public int IQ {get; set;}
+    public int Speed {get; set;}
 }

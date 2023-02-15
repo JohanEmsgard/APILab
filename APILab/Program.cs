@@ -3,23 +3,33 @@ WebApplication app = WebApplication.Create();
 app.Urls.Add("http://localhost:3000");
 app.Urls.Add("http://*:3000");
 
-List<Villains> evil = new();
+List<Villains> hero = new();
 
-evil.Add(new(){Name="Eggman", IQ=300});
-evil.Add(new(){Name="Bowser", IQ=1});
+hero.Add(new(){Name="Sonic", Speed=9000});
+hero.Add(new(){Name="Shadow", Speed=8500});
 
 
 app.MapGet("/",Answer);
 
-app.MapGet("/evil/", () => 
+app.MapGet("/hero/", () => 
 {
-    return evil;
+    return hero;
 });
 
 
-app.MapGet("/evil/{num}", (int num) =>
+app.MapGet("/hero/{num}", (int num) =>
 {
-    return num;
+    if(num >= 0 && num < hero.Count)
+    {
+        return Results.Ok(hero[num]);
+    }
+
+    return Results.NotFound();
+});
+
+app.MapPost("/hero/",() => 
+{
+
 });
 
 app.Run();
