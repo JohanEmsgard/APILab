@@ -36,6 +36,7 @@ app.MapPost("/hero/",(Villains h) =>
 
     hero.Add(h);
     Console.WriteLine(h.Name);
+    return Results.Ok();
 });
 
 app.Run();
